@@ -1,0 +1,24 @@
+Included in this folder are 4 file: 
+	1) u1-base.base: This is the training set. It contains data on the ratings that individual users gave to various
+	movies. It contains four columns that refer to a user ID, the index of the movie being rated, the rating given
+	(on a scale of 1-5), and when the rating was given (not important for this assignment), respectively.
+	
+	2) u1-test.test: This is the test set. It also contains data on the ratings that individual users gave to various
+	movies; however, IT SHOULD NOT BE USED FOR TRAINING! As with the training set, it contains four columns that refer
+	to a user ID, the index of the movie being rated, the rating given (on a scale of 1-5), and when the rating was
+	given, respectively.
+	
+	3) u1-genre.genre: This file associates numbers with particular genres. Data is of the form "genreName|genreNumber".
+	 There are 19 total genres included in this file.
+	
+	4) u-item.item: This file contains additional movie information and can be used in conjunction with u1-genre.genre
+	to extract genre information for each movie. The data is in the form:
+	
+			  movie id | movie title | release date | video release date |
+              IMDb URL | unknown | Action | Adventure | Animation |
+              Children's | Comedy | Crime | Documentary | Drama | Fantasy |
+              Film-Noir | Horror | Musical | Mystery | Romance | Sci-Fi |
+              Thriller | War | Western |
+	The last 19 fields are the genres, a 1 indicates the movie is of that genre, a 0 indicates it is not; movies can
+	be in several genres at once. Just for clarity, most movies in this dataset do not actually have a video release
+	date listed. This is okay because we'll only be looking at genre for this assignment.
